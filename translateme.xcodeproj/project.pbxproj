@@ -11,6 +11,8 @@
 		CEAB94452CC6064F00CC45B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB94442CC6064F00CC45B5 /* ContentView.swift */; };
 		CEAB94472CC6065200CC45B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB94462CC6065200CC45B5 /* Assets.xcassets */; };
 		CEAB944A2CC6065200CC45B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB94492CC6065200CC45B5 /* Preview Assets.xcassets */; };
+		CEAB94512CC60D7600CC45B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAB94502CC60D7500CC45B5 /* GoogleService-Info.plist */; };
+		CEAB94542CC614BC00CC45B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEAB94532CC614BC00CC45B5 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		CEAB94442CC6064F00CC45B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEAB94462CC6065200CC45B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAB94492CC6065200CC45B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEAB94502CC60D7500CC45B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAB94542CC614BC00CC45B5 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +39,7 @@
 		CEAB94362CC6064F00CC45B5 = {
 			isa = PBXGroup;
 			children = (
+				CEAB94502CC60D7500CC45B5 /* GoogleService-Info.plist */,
 				CEAB94412CC6064F00CC45B5 /* translateme */,
 				CEAB94402CC6064F00CC45B5 /* Products */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = translateme;
+			packageProductDependencies = (
+				CEAB94532CC614BC00CC45B5 /* FirebaseFirestore */,
+			);
 			productName = translateme;
 			productReference = CEAB943F2CC6064F00CC45B5 /* translateme.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = CEAB94362CC6064F00CC45B5;
+			packageReferences = (
+				CEAB94522CC614BC00CC45B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CEAB94402CC6064F00CC45B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				CEAB944A2CC6065200CC45B5 /* Preview Assets.xcassets in Resources */,
 				CEAB94472CC6065200CC45B5 /* Assets.xcassets in Resources */,
+				CEAB94512CC60D7600CC45B5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEAB94522CC614BC00CC45B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEAB94532CC614BC00CC45B5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEAB94522CC614BC00CC45B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEAB94372CC6064F00CC45B5 /* Project object */;
 }

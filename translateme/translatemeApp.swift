@@ -1,17 +1,18 @@
-//
-//  translatemeApp.swift
-//  translateme
-//
-//  Created by user on 10/20/24.
-//
-
 import SwiftUI
+import Firebase
 
 @main
-struct translatemeApp: App {
+struct TranslateMeApp: App {
+    
+    // Initialize Firebase when the app launches
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // This links to your ContentView.swift
         }
     }
 }
+
