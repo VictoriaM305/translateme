@@ -2,6 +2,8 @@
 
 https://www.loom.com/share/17a7270af5f04df498d289287776ad38?sid=bdfb8b46-0c31-47e7-8924-f46545856fa5
 
+https://hackmd.io/@bfrp19OgTt2XfKRmfav9kQ/HJfoipRkkg/edit
+
 # Project 6 - *translateme*
 
 Submitted by: **Victoria Mckinnien **
